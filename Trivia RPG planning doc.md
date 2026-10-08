@@ -20,6 +20,8 @@
 
 **Twitch:** Twitch integration so you can have chatters choose answers. There may also be a chaos mode where chat does everything. It wouldn’t be as much “Go left, go right, hit X” as there’d be a command over an interactable object, and chat would go, for example, “!character” to interact with the character named “Character” (There will be no characters named character)
 
+**Play modes (single-player and stream):** The game must be fully playable by one person with no stream, no chat, and no second player. Every choice that chat might make has a local input path (mouse/keyboard) that any player can use on their own. Twitch voting is an optional overlay layered on top when streaming: the same underlying "answer round" mechanic (question + options + a source of picks) drives both, so local input and chat votes feed one shared tally rather than forking the game logic. Solo play is the baseline; streaming is additive.
+
 **Character customization:** Every player character is made of three parts, plus a hat that you can unlock in stores or find around the world. Those are the head, the torso/arms, and the legs. You earn the ability to copy the parts of each character you beat in battle. Hats probably have perks, but you can beat the game without ever finding or buying a hat. But why would you? Hats are fun!
 
 **Core progression**  
