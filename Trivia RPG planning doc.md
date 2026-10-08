@@ -34,8 +34,9 @@ Each trainer has a question set, generally around:
 12 for easy trainers  
 16 for normal trainers  
 20 for tough trainers  
-24–32 for bosses  
-Defeating a trainer unlocks their entire question set for the player.  
+24–32 for bosses
+Set size reflects how tough the trainer is. Difficulty is a property of the *trainer*, not of individual questions: each trainer is an expert in their field and their set spans easy-to-hard on that topic. Per-question difficulty labels are not a mechanic. Special-format questions come at the very end of a trainer's set.
+Defeating a trainer unlocks their entire question set for the player.
 Questions are consumed when used in battle.  
 Fresh question: full damage.  
 Previously seen question: half damage.  
