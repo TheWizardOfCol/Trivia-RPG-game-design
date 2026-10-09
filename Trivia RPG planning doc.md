@@ -104,3 +104,32 @@ Every year, the secret society, The King Tut Oriel summons a random person from 
 
 **Worlds/Characters:**  
 **PLANNED OUT IN AN OBSIDIAN DOC.** 
+---
+
+## Session 9 — Playable battle slice, timer, and visual direction
+
+**Combat (solo baseline):**
+- Battle draws **every question from the trainer's own specialty set**
+  (per Character in the spreadsheet bank, `game_data.gd`). The early stock
+  placeholder questions were removed — no separate "player bank" exists yet;
+  out-answering the expert on their own subject is the fantasy. A player
+  question collection mechanic can come later.
+- Repeat questions deal half damage (full on first sight).
+
+**Answer timer:** 25 seconds per question solo; **35 seconds in Twitch
+mode** so the chat has time to vote. Mode switch is a runtime flip, no
+rebuild: `--mode=twitch` launch arg or a `mode=twitch` line in
+`client/backend.txt`. Timeouts count as wrong answers; the clock label turns
+wine under 5 seconds.
+
+**Visual direction ("wild, disordered scrapbook"):**
+- Pre-1930s palette to match the public-domain imagery: navy blues,
+  dark scholarly reds as accents, emerald greens, antique white, muddy
+  sepia, parchment.
+- Buttons sit at slightly random angles — a box of magazine scraps fell
+  onto the screen and became a game. Simple rectangles for now; scanned
+  paper scraps for the UI elements are coming later.
+- Fonts: IM Fell English (antique serif) for headings, Special Elite
+  (typewriter) for body — both freely licensed and embedded in the client.
+- First pass implemented in `client/theme.gd` (palette, fonts, tilted
+  buttons, wine/emerald bars on parchment).
